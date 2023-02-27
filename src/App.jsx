@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
+	return (
+		<div className='App'>
 
-  return (
-    <div className="App">
+			<select name='meme' id='selectMeme'>
+				<option value='fire'>Fire</option>
+				<option value='futurama'>Futurama</option>
+				<option value='history'>History</option>
+				<option value='matrix'>Matrix</option>
+				<option value='philosoraptor'>Pholosoraptor</option>
+				<option value='smart'>Smart Guy</option>
+			</select>
+
+			<input type='text' placeholder='Write first line...' />
+			<input type='text' placeholder='Write second line...' />
+
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <p>First Line</p>
+        <p>Second Line</p>
+        <img src="" alt="" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
 
-export default App
+      <button>Export</button>
+
+		</div>
+	)
+}

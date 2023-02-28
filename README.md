@@ -1,13 +1,11 @@
 # React Meme Generator  
 
 A basic meme Generator with React for practice basic React concepts.
+
 ## Tech Stack
 
-- Client: JavaScript (React)
+- Client: React
 - Bundler: Vite
-
-
-
 
 ## Authors
 

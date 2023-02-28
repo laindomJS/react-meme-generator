@@ -11,7 +11,7 @@ export const Memes = () => {
 		<div className='meme' id='meme'>
 			<p className='lineOne'>{lineOne}</p>
 			<p className='lineTwo'>{lineTwo}</p>
-			<img src={`../public/images/${string}.jpg`} />
+			<img src={`/images/${string}.jpg`} />
 		</div>
       <button onClick={exportMeme}>Export</button>
     </>

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { MemeCtx } from '../context/MemeContext';
-import { exportMeme } from './utils/exportMeme.js';
+import { exportMeme } from '../utils/exportMeme';
 
 export const Memes = () => {
 	

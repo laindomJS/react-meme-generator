@@ -21,7 +21,7 @@ div.meme {
 p.lineOne {
   position: absolute;
   top: 5px;
-  left: 38%;
+  left: 10%;
   font-size: 3em;
   font-weight: 600;
 }
@@ -29,7 +29,7 @@ p.lineOne {
 p.lineTwo {
   position: absolute;
   bottom: 5px;
-  left: 38%;
+  left: 10%;
   font-size: 3em;
   font-weight: 600;
 }

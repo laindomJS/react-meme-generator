@@ -1,17 +1,23 @@
-export const Inputs = (setLineOne, setLineTwo, lineOne, lineTwo) => {
-	return (
+import { useContext } from "react"
+import { MemeCtx } from "../context/MemeContext"
+
+export const Inputs = () => {
+	
+  const { lineOne, lineTwo, handleLineOne, handleLineTwo } = useContext(MemeCtx);
+  
+  return (
 		<>
 			<input
 				type='text'
 				value={lineOne}
-				onChange={(evt) => setLineOne(evt.target.value)}
+				onChange={handleLineOne}
 				placeholder='Write first line...'
 			/>
 
 			<input
 				type='text'
 				value={lineTwo}
-				onChange={(evt) => setLineTwo(evt.target.value)}
+				onChange={handleLineTwo}
 				placeholder='Write second line...'
 			/>
 		</>
